@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.raviteja.weatherapp.DetailsActivity">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="25dp"
+        android:id="@+id/line"
+        android:layout_below="@+id/view3"
+        android:layout_alignLeft="@+id/current_location_val_tv"
+        android:layout_alignStart="@+id/current_location_val_tv" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:id="@+id/weather_image"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/temperature_val_tv"
+        android:layout_below="@+id/weather_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/weathertype_val_tv"
+        android:layout_below="@+id/temperature_val_tv"
+        android:layout_alignLeft="@+id/temperature_val_tv"
+        android:layout_alignStart="@+id/temperature_val_tv" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/max_temperature_val_tv"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/weathertype_val_tv"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/Min_temp_val_tv"
+        android:layout_below="@+id/max_temperature_val_tv"
+        android:layout_alignLeft="@+id/max_temperature_val_tv"
+        android:layout_alignStart="@+id/max_temperature_val_tv"
+        android:layout_alignRight="@+id/max_temperature_val_tv"
+        android:layout_alignEnd="@+id/max_temperature_val_tv" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line2"
+        android:layout_below="@+id/Min_temp_val_tv"
+        android:background="@android:color/black"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feelsLike"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Humidity"
+        android:id="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DewPoint"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pressure"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Clouds"
+        android:id="@+id/textView9"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/feelsLike_val_tv"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginLeft="175dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/humidity_val_tv"
+        android:layout_above="@+id/textView7"
+        android:layout_alignLeft="@+id/feelsLike_val_tv"
+        android:layout_alignStart="@+id/feelsLike_val_tv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/dewpoint_val_tv"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_marginLeft="175dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/pressure_val_tv"
+        android:layout_above="@+id/textView9"
+        android:layout_alignLeft="@+id/dewpoint_val_tv"
+        android:layout_alignStart="@+id/dewpoint_val_tv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/clouds_val_tv"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignLeft="@+id/pressure_val_tv"
+        android:layout_alignStart="@+id/pressure_val_tv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/winds"
+        android:id="@+id/textView15"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/winds_val_tv"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/clouds_val_tv"
+        android:layout_alignLeft="@+id/clouds_val_tv"
+        android:layout_alignStart="@+id/clouds_val_tv" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/current_location_val_tv"
+        android:layout_below="@+id/view3"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignStart="@+id/view3" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        android:id="@+id/view3"/>
+
+</RelativeLayout>

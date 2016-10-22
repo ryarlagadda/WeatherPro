@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.raviteja.weatherapp.MainActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CityName"
+        android:hint="@string/City"
+        android:layout_below="@+id/view2" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StateName_et"
+        android:hint="@string/countryhint"
+        android:layout_below="@+id/CityName"
+        android:layout_alignLeft="@+id/CityName"
+        android:layout_alignStart="@+id/CityName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Submit"
+        android:id="@+id/Submit_button"
+        android:layout_below="@+id/StateName_et"
+        android:layout_centerHorizontal="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/SavedCitiesRecyclerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="220dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_favorites_mess_tv"
+        android:layout_below="@+id/Submit_button"
+        android:layout_marginTop="114dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/CityName"
+        android:layout_alignStart="@+id/CityName"
+        android:id="@+id/view2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedcities"
+        android:layout_alignRight="@+id/Submit_button"
+        android:layout_alignEnd="@+id/Submit_button"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/Submit_button"
+        android:layout_alignLeft="@+id/Submit_button"
+        android:layout_alignStart="@+id/Submit_button"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="City">City (i.e. Charlotte)</string>
+    <string name="State">State (i.e NC)</string>
+    <string name="Submit">Submit</string>
+    <string name="hourly_data">HOURLY DATA</string>
+    <string name="feelsLike">Feels Like</string>
+    <string name="Humidity">Humidity</string>
+    <string name="DewPoint">Dewpoint</string>
+    <string name="pressure">Pressure</string>
+    <string name="Clouds">Clouds</string>
+    <string name="winds">Winds</string>
+    <string name="hourlyDate">HOURLY DATE</string>
+    <string name="hourlyData">HOURLY DATA</string>
+    <string name="savedcities">Saved Citiex check</string>
+    <string name="Temperature">Temperature</string>
+    <string name="countryhint">Country (i.e USA)</string>
+    <string-array name="keyword">
+        <item>\u2109</item>
+        <item>\u2103</item>
+    </string-array>
+</resources>
